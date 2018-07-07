@@ -1,5 +1,4 @@
 package code;
-
 public class MyClass 
 { 
    public String printMessage(String name) 
@@ -11,6 +10,7 @@ public class MyClass
       else 
       {
          return "Hello " + name + "!";
+	 //simple vomment
       }
    }
 
@@ -20,6 +20,5 @@ public class MyClass
 	   System.out.println(hw.printMessage(""));
 	   System.out.println(hw.printMessage("World"));
 	   
-   }
-		
+   }	
 }
