@@ -1,5 +1,4 @@
 node{
-	
 	def mvnHome = tool 'Maven-3.5.4'
 	mvnHome = mvnHome + '\\bin'
 	def winJDK = tool 'JDK-1.3.1'
@@ -23,7 +22,7 @@ node{
 	stage('Build Automation'){
 		
 		withEnv(["JAVA_HOME=${winJDK}"]){
-			bat "${mvnHome}\\mvn clean package"
+		bat "${mvnHome}\\mvn ${mvnGoals}"
 		}
 	}
 	
