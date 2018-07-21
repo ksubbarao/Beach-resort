@@ -35,13 +35,11 @@ node{
 		def uploadSpec = """{
 		"files": [
 			{
-			  "pattern": "target\\Beach.war",
-			  "target": "maven-dev-local/WAR-Apps/Beach-Resort/${env.versionNumber}/"
+			  "pattern": "target\\*.war",
+			  "target": "maven-dev-local/Web-Apps/Beach/${env.versionNumber}/"
 			}
 		 ]
 		}"""
-		
-		//println pattern
 		
 		server.upload(uploadSpec)
 		
