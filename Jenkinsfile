@@ -10,7 +10,7 @@ node{
 		mvnHome = mvnHome + '\\bin'
 		def winJDK = tool 'JDK-1.3.1'
 		println mvnHome
-		withEnv["MAVEN_HOME =${mvnHome}", "JAVA_HOME = ${winJDK}"]{
+		withEnv(["MAVEN_HOME =${mvnHome}", "JAVA_HOME = ${winJDK}"]){
 			bat "mvn clean package"
 		}
 	}
