@@ -36,7 +36,7 @@ node{
 		"files": [
 			{
 			  "pattern": "target\\Beach.war",
-			  "target": "maven-dev-local/WAR-Apps/Beach-Resort/${env.versionNumber}"
+			  "target": "maven-dev-local/WAR-Apps/Beach-Resort/${env.versionNumber}/"
 			}
 		 ]
 		}"""
